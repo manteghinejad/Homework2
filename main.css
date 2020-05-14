@@ -1,0 +1,40 @@
+div {
+    width: 30%;
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    transform: translate(50%,-50%);
+    border: 1px solid;
+    padding: 0 0 0 0%;
+    background-color: #fcfcfc;
+    border-radius: 25px;
+}
+
+form {
+    text-align: center;
+}
+
+body {
+    background-image: url(background.jpg);
+    background-size: cover;
+}
+
+input[type="number"] {
+    margin: 2% 0;
+    padding: 2%;
+    border-radius: 30px;
+}
+
+input[type="submit"] {
+    font-size: 30px;
+}
+
+h1 {
+    text-align: center;
+}
+
+p.fill {
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+}
