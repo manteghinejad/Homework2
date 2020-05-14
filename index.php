@@ -10,6 +10,18 @@
 @$a = $_GET['firstnumber'];
 @$b = $_GET['secondnumber'];
 @$operator = $_GET['operator'];
+$d = null;
+if ($operator == '+'){
+    $d = $a + $b;
+} elseif ($operator == '-'){
+    $d = $a - $b;
+} elseif ($operator == '*'){
+    $d = $a * $b;
+} elseif ($operator == '/'){
+    $d = $a / $b;
+} else
+    $d = "Plesae fill in the blanks!"
+
 ?>
 <div>
     <h1>Simple PHP Calculator</h1>
@@ -21,18 +33,7 @@
         <input name="operator" value="*" type="submit">
         <input name="operator" value="/" type="submit"><br>
         <p class='fill'>
-        <?php
-            if ($operator == '+'){
-         echo $a + $b;
-            } elseif ($operator == '-'){
-                echo $a - $b;
-            } elseif ($operator == '*'){
-                echo $a * $b;
-            } elseif ($operator == '/'){
-                echo $a / $b;
-            } else
-                echo "Plesae fill in the blanks!"
-            ?>
+            <?php echo $d ?>
         </p>
     </form>
 </div>
